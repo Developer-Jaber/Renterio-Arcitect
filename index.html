@@ -41,13 +41,16 @@
             font-family: "Manrope", sans-serif;
             font-optical-sizing: auto;
         }
+        #bg-img{
+          background-image: url(./assets/bg.jpg);
+        }
      </style>
 
 </head>
 <body class="manrope-font">
     
     <!-- header section  -->
-     <header class="container 2xl:px-20 mx-auto px-0">
+     <header id="header" class="container 2xl:px-20 mx-auto px-0">
         <div class="navbar bg-base-100 my-10">
             <div class="navbar-start">
               <div class="dropdown">
@@ -84,11 +87,11 @@
             </div>
             <div class="navbar-center hidden lg:flex mx-12">
               <ul class="menu menu-horizontal px-1 text-lg font-semibold">
-                <li class="mx-1"><a class="active">Home</a></li>   
-                <li class="mx-1"><a>Service</a></li>
-                <li class="mx-1"><a>Portfolio</a></li>
-                <li class="mx-1"><a>Blogs</a></li>
-                <li class="mx-1"><a>Contact Us</a></li>
+                <li class="mx-1"><a href="#header" class="active">Home</a></li>   
+                <li class="mx-1"><a href="#work-proces">Service</a></li>
+                <li class="mx-1"><a href="#latest-portfolio">Portfolio</a></li>
+                <li class="mx-1"><a href="#">Blogs</a></li>
+                <li class="mx-1"><a href="#discus-next">Contact Us</a></li>
               </ul>
             </div>
             <div class="navbar-end">
@@ -368,42 +371,44 @@
         </section>
 
           <!-- Discus next project -->
-        <section id="discus-next" class="bg-next-project w-[70%] mx-auto">
-          <div class="hero">
-            <div class="hero-content text-center">
-              <div class="max-w-2xl">
-                <a class="btn bg-green-100 text-gray-600 rounded-full  justify-center">
-                  <i class="fa-solid fa-arrow-right"></i>
-                  <span class="text-lg font-extrabold">Let’s Connect</span> 
-                </a>
-                <h1 class="text-5xl mt-6 font-extrabold">Let’s Discuss Next Project</h1>
-                <p class="py-6 font-bold text-gray-600">
-                  The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.
-                </p>
+        <div id="bg-img">
+          <section id="discus-next" class="bg-next-project w-[70%] mx-auto pt-20">
+            <div class="hero">
+              <div class="hero-content text-center">
+                <div class="max-w-2xl">
+                  <a class="btn bg-green-100 text-gray-700 rounded-full  justify-center">
+                    <i class="fa-solid fa-arrow-right"></i>
+                    <span class="text-lg font-extrabold">Let’s Connect</span> 
+                  </a>
+                  <h1 class="text-5xl mt-6 font-extrabold">Let’s Discuss Next Project</h1>
+                  <p class="py-6 font-bold text-gray-600">
+                    The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
-
-          <div class="grid grid-cols-2 gap-10">
-            <input class=" col-span-1  border-2 border-gray-300 rounded-full bg-white text-lg font-semibold px-4 py-4" type="text" placeholder="First Name*" class="input input-bordered w-full max-w-xs" />
-            <input class=" col-span-1  border-2 border-gray-300 rounded-full bg-white text-lg font-semibold px-4 py-4" type="text" placeholder="Last Name*" class="input input-bordered w-full max-w-xs" />
-            <input class=" col-span-1  border-2 border-gray-300 rounded-full bg-white text-lg font-semibold px-4 py-4" type="text" placeholder="Phone Number*" class="input input-bordered w-full max-w-xs" />
-            <input class=" col-span-1  border-2 border-gray-300 rounded-full bg-white text-lg font-semibold px-4 py-4" type="text" placeholder="Email Number*" class="input input-bordered w-full max-w-xs" />
-
-            <textarea class="col-span-2 textarea textarea-bordered text-lg font-semibold rounded-3xl h-60" placeholder="Write your message here"></textarea>
-            <a class="btn col-span-1 bg-logo h-[65px]  rounded-full  mb-20">
-              <span class="text-[20px] font-semibold">Send Mail</span> 
-              <div class="h-10 w-10 bg-black text-white flex justify-center items-center rounded-full">
-                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
-              </div>
-            </a>
-          </div>
-        </section>
+  
+            <div class="grid grid-cols-2 gap-10">
+              <input class=" col-span-1  border-2 border-gray-300 rounded-full bg-white text-lg font-semibold px-4 py-4" type="text" placeholder="First Name*" class="input input-bordered w-full max-w-xs" />
+              <input class=" col-span-1  border-2 border-gray-300 rounded-full bg-white text-lg font-semibold px-4 py-4" type="text" placeholder="Last Name*" class="input input-bordered w-full max-w-xs" />
+              <input class=" col-span-1  border-2 border-gray-300 rounded-full bg-white text-lg font-semibold px-4 py-4" type="text" placeholder="Phone Number*" class="input input-bordered w-full max-w-xs" />
+              <input class=" col-span-1  border-2 border-gray-300 rounded-full bg-white text-lg font-semibold px-4 py-4" type="text" placeholder="Email Number*" class="input input-bordered w-full max-w-xs" />
+  
+              <textarea class="col-span-2 textarea textarea-bordered text-lg font-semibold rounded-3xl h-60" placeholder="Write your message here"></textarea>
+              <a class="btn col-span-1 bg-logo h-[65px]  rounded-full  mb-20">
+                <span class="text-[20px] font-semibold">Send Mail</span> 
+                <div class="h-10 w-10 bg-black text-white flex justify-center items-center rounded-full">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </div>
+              </a>
+            </div>
+          </section>
+        </div>
      </main>
 
 
       <!-- footer section  -->
-     <footer class="bg-black text-white">
+     <footer id="footer" class="bg-black text-white">
       <div class="hero min-h-96">
         <div class="hero-content text-center">
           <div class="max-w-2xl">
